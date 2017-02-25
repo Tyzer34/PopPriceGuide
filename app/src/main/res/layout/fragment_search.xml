@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/layout_byName">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/bar"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchText_byName"
+            android:singleLine="true"
+            android:width="250dp"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="15dp"
+            android:singleLine="true"
+            android:width="250dp"
+            android:gravity="center_horizontal"
+            android:text="SEARCH BY NAME"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_above="@id/searchText_byName"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search POP!"
+            android:layout_marginTop="15dp"
+            android:id="@+id/searchButton_byName"
+            android:layout_below="@+id/searchText_byName"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/layout_byName"
+        android:id="@+id/layout_byCode">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/bar"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchText_byCode"
+            android:singleLine="true"
+            android:width="250dp"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:inputType="number"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="15dp"
+            android:singleLine="true"
+            android:width="250dp"
+            android:gravity="center_horizontal"
+            android:text="SEARCH BY BARCODE"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_above="@id/searchText_byCode"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/searchText_byCode"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search Manually"
+                android:layout_marginTop="15dp"
+                android:id="@+id/searchButton_byCode"
+                android:enabled="false"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan Barcode"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/scanBarcode"
+                android:layout_alignLeft="@id/searchButton_byCode" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:textColor="#000000"
+        android:layout_width="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Last scanned:"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:layout_below="@id/layout_byCode"
+        android:id="@+id/lastSearched_text"/>
+
+    <ListView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView_lastSearched"
+        android:layout_below="@+id/lastSearched_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:clickable="true" />
+
+</RelativeLayout>

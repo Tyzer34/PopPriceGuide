@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">PPG</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">News</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>News</item>
+        <item>Search</item>
+        <item>Collection</item>
+        <item>Wantlist</item>
+        <item>Statistics</item>
+        <item>Friends</item>
+        <item>Upcoming</item>
+        <item>Forum</item>
+        <item>Settings</item>
+        <item>Login</item>
+        <item>Register</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_search</item>
+        <item>@drawable/ic_collection</item>
+        <item>@drawable/ic_wantedlist</item>
+        <item>@drawable/ic_stats</item>
+        <item>@drawable/ic_friends</item>
+        <item>@drawable/ic_upcoming</item>
+        <item>@drawable/ic_forum</item>
+        <item>@drawable/ic_settings</item>
+        <item>@drawable/ic_login</item>
+        <item>@drawable/ic_register</item>
+    </array>
+
+    <!-- Monetary Unit Spinner Items -->
+    <string-array name="monetary_unit_items">
+        <item>$</item>
+        <item>€</item>
+        <item>£</item>
+        <item>￥</item>
+    </string-array>
+
+    <string name="monetary_unit_prompt">Choose a Monetary Unit</string>
+
+    <!-- Last Searched Count Items -->
+    <string-array name="last_searched_count_items">
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+    </string-array>
+
+    <string name="last_searched_count_prompt">Set max amount of Last Scanned items</string>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+</resources>
